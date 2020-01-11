@@ -1,0 +1,23 @@
+{
+	"name": "bangmoo/redis",
+	"description": "redis rewrite",
+	"type": "library",
+	"license": "MIT",
+	"homepage": "https://github.com/UncleJock/bangmoo.git",
+	"authors": [
+		{
+			"name": "bangmoo",
+			"email": "spirit_cjw@163.com"
+		}
+	],
+	"require": {
+		"php": ">=7.0.0",
+		"ext-redis": "*"
+	},
+	"autoload": {
+		"psr-4": {
+			"bangmoo\\redis\\": "src/"
+		}
+	},
+    "minimum-stability": "stable"
+}
