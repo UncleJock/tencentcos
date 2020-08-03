@@ -1,6 +1,6 @@
 {
-	"name": "bangmoo/redis",
-	"description": "redis rewrite",
+	"name": "com.bangmoo/tencentcos",
+	"description": "tencentcos",
 	"type": "library",
 	"license": "MIT",
 	"homepage": "https://github.com/UncleJock/bangmoo.git",
@@ -12,11 +12,11 @@
 	],
 	"require": {
 		"php": ">=7.0.0",
-		"ext-redis": "*"
+		"qcloud/cos-sdk-v5": ">=2.0"
 	},
 	"autoload": {
 		"psr-4": {
-			"bangmoo\\redis\\": "src/"
+			"bangmoo\\tencentcos\\": "src/"
 		}
 	},
     "minimum-stability": "stable"
