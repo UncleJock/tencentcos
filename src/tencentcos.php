@@ -94,4 +94,24 @@ class tencentcos
         }
     }
 
+    /**
+     * 获取临时访问链接
+     * 
+     * @return mixed
+     * @author: chen
+     * @time: 2021/12/21 14:44
+     */
+    public function get_object_url(string $key):string 
+    {
+        try {
+            $bucket = $this->bucket . '-' . $this->appId;
+            $signedUrl = $this->cosClient->getObjectUrl($bucket, $key, '+10 minutes');
+            // 请求成功
+            return $signedUrl;
+        } catch (\Exception $e) {
+            // 请求失败
+            throw new RuntimeException($e->getMessage());
+        }
+    }
+
 }
